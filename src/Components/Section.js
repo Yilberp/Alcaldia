@@ -17,7 +17,7 @@ export function Section() {
         </div>
       </div>
       <div className={styles.article}>
-        <a
+        <a target="_blank" rel="noreferrer"
           className={styles.article__a}
           href="https://datastudio.google.com/u/0/reporting/ed54dbc2-1f48-4b00-8ce4-742c3282d534/page/Zc7SB"
         >
@@ -41,7 +41,7 @@ export function Section() {
             <div>
               <div className={styles.article__content__url__border}>
                 <div className={styles.article__content__url__btn}>
-                  <a href="https://datastudio.google.com/u/0/reporting/ed54dbc2-1f48-4b00-8ce4-742c3282d534/page/Zc7SB">
+                  <a target="_blank" rel="noreferrer" href="https://datastudio.google.com/u/0/reporting/ed54dbc2-1f48-4b00-8ce4-742c3282d534/page/Zc7SB">
                     Conoce las cifras
                   </a>
                 </div>

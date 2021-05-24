@@ -1,9 +1,9 @@
 import styles from "./Card.module.css";
 export function Card(props) {
-  const { img, title } = props;
+  const { img, title, url } = props;
   return (
     <div className={styles.card}>
-      <a href="/" className={styles.card__a}>
+      <a href={url} className={styles.card__a}>
         <div className={styles.card__a_img}>
           <img className={styles.card__img} src={img} alt=" " />
         </div>

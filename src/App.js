@@ -1,20 +1,23 @@
 import "./App.css";
-import { Card } from "./Components/Card";
-import { Section } from "./Components/Section";
-import cards from "./card.json"
 import { Footer } from "./Components/Footer";
+import { LandingPage } from "./Pages/LandingPage";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { Transparencia } from "./Pages/Transparencia";
 function App() {
   return (
-    <div className="container">
-      <Section/>
-      <div className="grid_container">
-        {
-          cards.map(card =>
-            <Card key={card.id} img={card.urlImg} title={card.title} />)
-        }
+    <Router>
+      <div className="container">
+        <Switch>
+          <Route path="/transparencia">
+            <Transparencia />
+          </Route>
+          <Route path="/">
+            <LandingPage />
+          </Route>
+        </Switch>
+        <Footer />
       </div>
-      <Footer/>
-    </div>
+    </Router>
   );
 }
 
